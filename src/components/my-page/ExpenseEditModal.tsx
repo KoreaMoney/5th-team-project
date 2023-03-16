@@ -25,12 +25,12 @@ const ExpenseEditModal = ({
   setIsModalActive,
   expense,
 }: ExpenseEditModalProps) => {
-  const [expenseWhere, setExpenseWhere] = React.useState<string>(expense.place);
-  const [expenseWhat, setExpenseWhat] = React.useState<string>(expense.product);
-  const [expenseHowMuch, setExpenseHowMuch] = React.useState<number>(
+  const [expenseWhere, setExpenseWhere] = useState<string>(expense.place);
+  const [expenseWhat, setExpenseWhat] = useState<string>(expense.product);
+  const [expenseHowMuch, setExpenseHowMuch] = useState<number>(
     expense.price
   );
-  const [expenseExperience, setExpenseExperience] = React.useState<string>(
+  const [expenseExperience, setExpenseExperience] = useState<string>(
     expense.experience
   );
 
